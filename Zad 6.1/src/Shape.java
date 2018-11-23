@@ -1,8 +1,9 @@
 import java.awt.event.MouseListener;
-
+import java.awt.event.MouseAdapter;
 import java.awt.Graphics;
+import java.awt.event.MouseMotionListener;
 
-public abstract class Shape {
+public abstract class Shape extends MouseAdapter implements MouseListener, MouseMotionListener {
     private int x;
     private int y;
     public String name;
